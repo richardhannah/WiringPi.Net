@@ -48,10 +48,10 @@ namespace WiringPi
     /// </summary>
     public class GPIO
     {
-        [DllImport("libwiringPi.so", EntryPoint = "pinModeGpio")]           //Uses Gpio pin numbers
+        [DllImport("libwiringPi.so", EntryPoint = "pinMode")]           //Uses Gpio pin numbers
         public static extern void pinMode(int pin, int mode);
 
-        [DllImport("libwiringPi.so", EntryPoint = "digitalWriteGpio")]      //Uses Gpio pin numbers
+        [DllImport("libwiringPi.so", EntryPoint = "digitalWrite")]      //Uses Gpio pin numbers
         public static extern void digitalWrite(int pin, int value);
 
         [DllImport("libwiringPi.so", EntryPoint = "digitalWriteByteGpio")]      //Uses Gpio pin numbers
